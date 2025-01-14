@@ -67,6 +67,13 @@ El contenedor se ejecuta de forma interactiva (`-ti`) y se elimina automáticame
 
 ![Lanzando eclipse](./images/script-clipse.png)
 
+![Lanzando eclipse](./images/script-clipse2.png)
+
+![Lanzando eclipse](./images/script-clipse3.png)
+
+![Lanzando eclipse](./images/script-clipse4.png)
+
+
 ## Instalar extensiones
 
 Las extensiones de un IDE nos van a facilitar la labor de programar, hacer más flexible nuestro IDE, además de hacer nuestros código más seguro.
