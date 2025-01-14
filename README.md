@@ -25,22 +25,34 @@ sudo chgrp -R $(whoami) $HOME/docker/eclipse
 2. Configurar el entorno gráfico 
 
 ~~~
-export DISPLAY=:0
-startxwin -- -listen tcp &
-xhost + 
+# Al arrancar el contenedor obteniamos el siguiente error: library initialization failed - unable to allocate file descriptor table - out of memoryºº
+# En Kali linux no existe limite para ulimit y docker se vuelve un poco loco con este contenedo, modificando el siguiente archivo
+# hacemos posible que el contenedor arranque
+#
+# Modificar /etc/systemd/system/multi-user.target.wants/docker.service
+# Añadir a ExecStart --> ExecStart=/usr/bin/dockerd ... --default-ulimit nofile=65536:65536 ...
+# sudo systemctl daemon-reload
+# sudo systemctl restart docker
+#
+# La variable de entorno artifactory_host no se que hace, no se lanza nada en ese puerto que yo haya podido ver.
+#
+#       -e artifactory_host='127.0.0.1:8080'\
+
+export DISPLAY=:0.0
+xhost +local:tcpserver
 ~~~
 
 3. Lanzar el contenedor
 
 ~~~
-sudo docker run -ti --rm \
-           -e DISPLAY=$DISPLAY \
-	       -e artifactory_host='IP:PUERTO'\
-		   --name eclipse \
-           -v /tmp/.X11-unix:/tmp/.X11-unix \
-           -v `pwd`:/workspace \
-           -v $HOME/docker/eclipse/datos:/home/developer \
-           dockeruc/eclipse	
+
+docker run -ti --rm \
+        -e DISPLAY=$DISPLAY \
+        --name eclipse \
+        -v /tmp/.X11-unix:/tmp/.X11-unix \
+        -v ./workspace:/workspace \
+        -v ./eclipse/datos:/home/developer \
+        dockeruc/eclipse
 
 ~~~
  
