@@ -65,6 +65,8 @@ Los directorios locales `./workspace` y `./eclipse/datos`  se montan en el conte
 respectivamente, asegurando persistencia entre ejecuciones.
 El contenedor se ejecuta de forma interactiva (`-ti`) y se elimina automáticamente al terminar (`--rm`), evitando residuos en el sistema.
 
+![Lanzando eclipse](./images/script-clipse.png)
+
 ## Instalar extensiones
 
 Las extensiones de un IDE nos van a facilitar la labor de programar, hacer más flexible nuestro IDE, además de hacer nuestros código más seguro.
