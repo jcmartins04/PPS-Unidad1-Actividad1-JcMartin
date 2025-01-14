@@ -80,6 +80,9 @@ Las extensiones de un IDE nos van a facilitar la labor de programar, hacer más 
 Tenemos muchas extensiones, tanto para lenguajes de programación específicos como para el IDE.
 
 >__Las siguientes operaciones las puedes hacer desde el entorno Eclipse que hemos creado o puedes utilizar el IDE que prefieras en tu equipo__
+
+![VisualCode](images/installVScode.png)
+
 >__Busca cuáles son las mejores extensiones de eclipse para programadores y las añades desde la tienda de tu IDE__
 >__Busca y escribe para qué sirven estos plugins: Checkstyle, Sonar Lint.__
 
@@ -123,6 +126,9 @@ Estas extensiones amplían las capacidades de Eclipse, adaptándolo a las necesi
 **Checkstyle**  
 Ayuda a mantener un estilo de código consistente al señalar desviaciones de las reglas de codificación definidas, mejorando la calidad del código.
 
+
+![Extensiones](images/install-checkStyles-VScode.png)
+
 **SonarLint**
 Es una herramienta que ayuda a mejorar la calidad del código y prevenir errores. Algunas de sus principales funciones son:  
 
@@ -136,13 +142,21 @@ Es una herramienta que ayuda a mejorar la calidad del código y prevenir errores
 
 5. **Feedback inmediato:** Muestra problemas directamente en el editor de Eclipse, lo que permite corregirlos de manera rápida y eficiente.  
 
+
+![SonarLint](images/install-SonarQube-VScode.png)
+
 En resumen, SonarLint actúa como un "asistente de calidad" que mejora la productividad al mantener el código limpio y libre de errores desde el inicio.
 
 ## Prueba entornos
 
 El entorno de desarrollo nos sirve para crear nuestras aplicaciones y además podemos comprobar los errores que tienen, problemas de seguridad, etc. por lo que desde allí vamos a poder corregirlos.
 >__Descarga el código fuente de un proyecto java o python: compila, enlaza y ejecutaló. Tienes algunos ejemplos en la carpeta Sources de este repositorio__
+
+![Debug](images/debug-cal-py.png)
+
 >__Utiliza las herramientas de depuración de Eclipse o Netbeans para depurar el proyecto, y las diferentes extensiones para ver información, problemas, etc.__
+
+![Debug2](images/debug-cal3-py.png)
 
 ---
 ## ENTREGA
