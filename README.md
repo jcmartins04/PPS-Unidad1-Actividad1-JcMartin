@@ -156,7 +156,7 @@ El entorno de desarrollo nos sirve para crear nuestras aplicaciones y además po
 
 >__Utiliza las herramientas de depuración de Eclipse o Netbeans para depurar el proyecto, y las diferentes extensiones para ver información, problemas, etc.__
 
-![Debug2](images/debug-cal3-py.png)
+![Debug2](images/debug-cal3-py2.png)
 
 ---
 ## ENTREGA
