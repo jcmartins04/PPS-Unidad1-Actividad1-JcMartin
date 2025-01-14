@@ -24,6 +24,8 @@ sudo chgrp -R $(whoami) $HOME/docker/eclipse
 
 2. Configurar el entorno gráfico 
 
+![Navegador](mages/script-clipse4.png)
+
 ~~~
 # Al arrancar el contenedor obteniamos el siguiente error: library initialization failed - unable to allocate file descriptor table - out of memoryºº
 # En Kali linux no existe limite para ulimit y docker se vuelve un poco loco con este contenedo, modificando el siguiente archivo
@@ -65,13 +67,11 @@ Los directorios locales `./workspace` y `./eclipse/datos`  se montan en el conte
 respectivamente, asegurando persistencia entre ejecuciones.
 El contenedor se ejecuta de forma interactiva (`-ti`) y se elimina automáticamente al terminar (`--rm`), evitando residuos en el sistema.
 
-![Lanzando eclipse](../images/script-clipse.png)
+![Lanzando eclipse](images/script-eclipse.png)
 
-![Lanzando eclipse](../images/script-clipse2.png)
+![Interface eclipse](images/script-clipse2.png)
 
-![Lanzando eclipse](../images/script-clipse3.png)
-
-![Lanzando eclipse](../images/script-clipse4.png)
+![Ejecutando eclipse](images/script-clipse3.png)
 
 
 ## Instalar extensiones
