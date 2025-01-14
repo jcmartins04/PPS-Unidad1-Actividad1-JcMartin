@@ -24,7 +24,7 @@ sudo chgrp -R $(whoami) $HOME/docker/eclipse
 
 2. Configurar el entorno gráfico 
 
-![Navegador](mages/script-clipse4.png)
+![Navegador](mages/script-eclipse4.png)
 
 ~~~
 # Al arrancar el contenedor obteniamos el siguiente error: library initialization failed - unable to allocate file descriptor table - out of memoryºº
@@ -69,9 +69,9 @@ El contenedor se ejecuta de forma interactiva (`-ti`) y se elimina automáticame
 
 ![Lanzando eclipse](images/script-eclipse.png)
 
-![Interface eclipse](images/script-clipse2.png)
+![Interface eclipse](images/script-eclipse2.png)
 
-![Ejecutando eclipse](images/script-clipse3.png)
+![Ejecutando eclipse](images/script-eclipse3.png)
 
 
 ## Instalar extensiones
