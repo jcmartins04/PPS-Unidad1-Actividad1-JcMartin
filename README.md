@@ -114,7 +114,8 @@ Estas extensiones amplían las capacidades de Eclipse, adaptándolo a las necesi
 **Checkstyle**  
 Ayuda a mantener un estilo de código consistente al señalar desviaciones de las reglas de codificación definidas, mejorando la calidad del código.
 
-El plugin **SonarLint** para Eclipse es una herramienta que ayuda a mejorar la calidad del código y prevenir errores. Algunas de sus principales funciones son:  
+**SonarLint**
+Es una herramienta que ayuda a mejorar la calidad del código y prevenir errores. Algunas de sus principales funciones son:  
 
 1. **Análisis de código en tiempo real:** Detecta errores, vulnerabilidades y malas prácticas mientras se escribe el código, sin necesidad de ejecutar compilaciones o tests.  
    
