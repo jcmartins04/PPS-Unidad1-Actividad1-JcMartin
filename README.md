@@ -65,13 +65,13 @@ Los directorios locales `./workspace` y `./eclipse/datos`  se montan en el conte
 respectivamente, asegurando persistencia entre ejecuciones.
 El contenedor se ejecuta de forma interactiva (`-ti`) y se elimina automáticamente al terminar (`--rm`), evitando residuos en el sistema.
 
-![Lanzando eclipse](./images/script-clipse.png)
+![Lanzando eclipse](../images/script-clipse.png)
 
-![Lanzando eclipse](./images/script-clipse2.png)
+![Lanzando eclipse](../images/script-clipse2.png)
 
-![Lanzando eclipse](./images/script-clipse3.png)
+![Lanzando eclipse](../images/script-clipse3.png)
 
-![Lanzando eclipse](./images/script-clipse4.png)
+![Lanzando eclipse](../images/script-clipse4.png)
 
 
 ## Instalar extensiones
