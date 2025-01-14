@@ -57,7 +57,13 @@ docker run -ti --rm \
 ~~~
  
 
-> __Explica el comando docker que has utilizado__
+> __Explicación del comando docker que he utilizado__
+
+Este comando, del apartado 3, una vez inicializado el entorno gráfico, lanza un contenedor Docker con la imagen `dockeruc/eclipse`, configurado
+para ejecutar Eclipse con soporte gráfico utilizando el entorno X11 del host (`-e DISPLAY=$DISPLAY` y `-v /tmp/.X11-unix:/tmp/.X11-unix`).
+Los directorios locales `./workspace` y `./eclipse/datos`  se montan en el contenedor para almacenar los proyectos y datos del usuario,
+respectivamente, asegurando persistencia entre ejecuciones.
+El contenedor se ejecuta de forma interactiva (`-ti`) y se elimina automáticamente al terminar (`--rm`), evitando residuos en el sistema.
 
 ## Instalar extensiones
 
@@ -67,8 +73,95 @@ Tenemos muchas extensiones, tanto para lenguajes de programación específicos c
 __Las siguientes operaciones las puedes hacer desde el entorno Eclipse que hemos creado o puedes utilizar el IDE que prefieras en tu equipo__
 >__Busca cuáles son las mejores extensiones de eclipse para programadores y las añades desde la tienda de tu IDE__
 >__ Busca y escribe para qué sirven estos plugins: Checkstyle, Sonar Lint.__
+
+Eclipse es un entorno de desarrollo integrado (IDE) ampliamente utilizado que permite ampliar sus funcionalidades mediante diversos complementos.
+A continuación, se presentan algunas de las extensiones más recomendadas para programadores que buscan mejorar su productividad y eficiencia:
+
+:::contextList
+
+**EGit**  
+Proporciona integración con Git, permitiendo gestionar repositorios directamente desde Eclipse. 
+:::
+
+:::contextList
+
+**Spring Tools**  
+Facilita el desarrollo de aplicaciones con el framework Spring, ofreciendo soporte para Spring Boot y herramientas de configuración. 
+:::
+
+:::contextList
+
+**Maven Integration for Eclipse (M2E)**  
+Permite gestionar proyectos Maven dentro de Eclipse, facilitando la configuración y administración de dependencias. 
+:::
+
+:::contextList
+
+**Mylyn**  
+Ofrece una interfaz centrada en tareas que integra herramientas de gestión del ciclo de vida de aplicaciones, mejorando la productividad al reducir la sobrecarga de información. 
+:::
+
+:::contextList
+
+**Checkstyle**  
+Ayuda a mantener un estilo de código consistente al señalar desviaciones de las reglas de codificación definidas, mejorando la calidad del código. 
+:::
+
+:::contextList
+
+**FindBugs**  
+Analiza programas Java compilados para detectar posibles errores, contribuyendo a la identificación temprana de problemas en el código. 
+:::
+
+:::contextList
+
+**PMD**  
+Detecta código mal escrito y posibles errores, ayudando a mejorar la calidad y mantenimiento del código fuente. 
+:::
+
+:::contextList
+
+**AnyEdit Tools**  
+Agrega funcionalidades adicionales al editor, como la eliminación de espacios en blanco innecesarios y la conversión de caracteres especiales, mejorando la legibilidad del código. 
+:::
+
+:::contextList
+
+**Eclim**  
+Integra las funcionalidades de Eclipse con editores de texto como Vim, permitiendo a los desarrolladores escribir código en diferentes lenguajes con soporte avanzado. 
+:::
+
+:::contextList
+
+**Subclipse**  
+Proporciona soporte para Subversion (SVN) dentro de Eclipse, facilitando el control de versiones y la colaboración en proyectos. 
+:::
+
+Estas extensiones amplían las capacidades de Eclipse, adaptándolo a las necesidades específicas de cada desarrollador y mejorando la eficiencia en el desarrollo de software. 
+
 >__Instala los plugins y complementos que has encontrado. Además busca e instala los plugins Checkstyle y Sonar Lint.__
 
+:::contextList
+
+**Checkstyle**  
+Ayuda a mantener un estilo de código consistente al señalar desviaciones de las reglas de codificación definidas, mejorando la calidad del código.
+:::
+
+:::contextList
+El plugin **SonarLint** para Eclipse es una herramienta que ayuda a mejorar la calidad del código y prevenir errores. Algunas de sus principales funciones son:  
+
+1. **Análisis de código en tiempo real:** Detecta errores, vulnerabilidades y malas prácticas mientras se escribe el código, sin necesidad de ejecutar compilaciones o tests.  
+   
+2. **Soporte para múltiples lenguajes:** Compatible con lenguajes como Java, JavaScript, Python, C, C++, entre otros.  
+
+3. **Reglas configurables:** Permite personalizar las reglas de análisis de acuerdo con las necesidades del proyecto.  
+
+4. **Integración con SonarQube y SonarCloud:** Si se conecta a estas plataformas, puede sincronizar las reglas y obtener información adicional del análisis del proyecto.  
+
+5. **Feedback inmediato:** Muestra problemas directamente en el editor de Eclipse, lo que permite corregirlos de manera rápida y eficiente.  
+
+En resumen, SonarLint actúa como un "asistente de calidad" que mejora la productividad al mantener el código limpio y libre de errores desde el inicio.
+:::
 
 ## Prueba entornos
 
